@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Container from '../components/common/container';
 import Layout from '../components/common/layout';
+import Header from '../components/common/header';
 
 export default function Index() {
   return (
@@ -9,8 +10,9 @@ export default function Index() {
         <Head>
           <title>Duruwa</title>
         </Head>
+        <Header/>
         <Container>
-          hello
+          
         </Container>
       </Layout>
     </>
