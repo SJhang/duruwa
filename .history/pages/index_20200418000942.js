@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Container from '../components/common/container';
 import Layout from '../components/common/layout';
+import Meta from '../components/common/meta';
 
 export default function Index() {
   return (

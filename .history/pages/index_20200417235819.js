@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Container from '../components/common/container';
-import Layout from '../components/common/layout';
+import Head from 'next/head'
+import Container from '../components/common/container'
+import Layout from '../components/common/layout'
 
 export default function Index() {
   return (

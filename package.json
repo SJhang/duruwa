@@ -11,5 +11,11 @@
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "classnames": "^2.2.6",
+    "next-purgecss": "^4.0.0",
+    "tailwindcss": "^1.2.0"
   }
 }
