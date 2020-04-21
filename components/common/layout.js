@@ -1,16 +1,19 @@
+import { isMobile } from 'react-device-detect';
 // import Alert from '../components/alert'
-import Footer from './footer'
-import Meta from './meta'
+import Header from './header';
+import Footer from './footer';
+import Meta from './meta';
 
 export default function Layout({ preview, children }) {
   return (
     <>
-      <Meta />
+      <Meta/>
+      <Header isMobile />
       <div className="min-h-screen">
         {/* <Alert preview={preview} /> */}
-        <main>{children}</main>
+        {children}
       </div>
-      <Footer />
+      <Footer isMobile />
     </>
   )
 }
