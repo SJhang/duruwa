@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+
 export default function media({ size = "2x", className, color }) {
   const sizes = {
     xs: 'fa-xs',
@@ -11,14 +13,14 @@ export default function media({ size = "2x", className, color }) {
   };
 
   return (
-    <div className={`${className} flex items-center text-${color}`}>
-      <a className="px-2 py-2 cursor-pointer">
+    <div className={classNames(`flex items-center text-${color}`, {[className]: !!className})}>
+      <a className="px-3 py-2 cursor-pointer">
         <i className={`fab fa-instagram ${sizes[size]}`}/>
       </a>
-      <a className="px-2 py-2 cursor-pointer"> 
-        <i className={`fab fa-facebook-square ${sizes[size]}`}/>
+      <a className="px-3 py-2 cursor-pointer"> 
+        <i className={`fab fa-facebook-f ${sizes[size]}`}/>
       </a>
-      <a className="px-2 py-2 cursor-pointer">
+      <a className="px-3 py-2 cursor-pointer">
         <i className={`fab fa-youtube ${sizes[size]}`}/>
       </a>
     </div>

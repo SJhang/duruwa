@@ -1,10 +1,8 @@
 import Head from "next/head";
 import Container from "../components/common/container";
 import Layout from "../components/common/layout";
-import Header from "../components/common/header";
-import Footer from "../components/common/footer";
 
-import LandingPage from '../components/LandingPage';
+import Intro from '../components/Intro';
 
 export default function Index() {
   return (
@@ -15,7 +13,7 @@ export default function Index() {
 
       <Layout>
         <Container>
-          <LandingPage/>
+          <Intro/>
         </Container>
       </Layout>
     </>

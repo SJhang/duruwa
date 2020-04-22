@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { isMobile } from 'react-device-detect';
 import classNames from "classnames";
 import Container from './container';
 import Media from './media';
 
-export default function Header({ isMobile }) {
+export default function Header({ hide }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const onClickDropdown = e => {
@@ -11,13 +12,13 @@ export default function Header({ isMobile }) {
     setIsOpen(!isOpen);
   };
 
-  console.log(isMobile);
-
   return (
-    <header className="bg-gray-900">
+    <header className={classNames("bg-gray-900", {"hidden": hide})}>
       <Container className="sm:flex sm:justify-between sm:py-5 sm:px-5 sm:items-center">
         <div className="flex item-center py-3 justify-between sm:p-0">
-          <div className="text-white">Duruwa</div>
+          <div className="text-white">
+            <a href="#" >드루와컴퍼니</a>
+          </div>
           <div className="sm:hidden">
             <button
               type="button"
@@ -45,26 +46,26 @@ export default function Header({ isMobile }) {
             isOpen ? "block" : "hidden"
           )}
         >
-          <a href="#" className="block text-white font-semibold hover:bg-gray-800 rounded py-1">
-            About
+          <a href="#" className="block text-white font-semibold hover:bg-gray-800 rounded py-1 sm:px-5">
+            프리
           </a>
           <a
             href="#"
-            className="block text-white font-semibold hover:bg-gray-800 rounded py-1 mt-1 sm:mt-0 sm:ml-2"
+            className="block text-white font-semibold hover:bg-gray-800 rounded py-1 mt-1 sm:mt-0 sm:ml-2 sm:px-5"
           >
-            Download
+            편리
           </a>
           <a
             href="#"
-            className="block text-white font-semibold hover:bg-gray-800 rounded py-1 mt-1 sm:mt-0 sm:ml-2"
+            className="block text-white font-semibold hover:bg-gray-800 rounded py-1 mt-1 sm:mt-0 sm:ml-2 sm:px-5"
           >
-            Support
+            서비스
           </a>
         </div>
         <Media 
           className={classNames({ "hidden": isMobile })} 
           color="white" 
-          size="5x"
+          size="2x"
         />
       </Container>
     </header>
