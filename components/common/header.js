@@ -13,11 +13,11 @@ export default function Header({ hide }) {
   };
 
   return (
-    <header className={classNames("bg-gray-900", {"hidden": hide})}>
+    <header className={classNames("bg-gray-900")}>
       <Container className="sm:flex sm:justify-between sm:py-5 sm:px-5 sm:items-center">
         <div className="flex item-center py-3 justify-between sm:p-0">
-          <div className="text-white">
-            <a href="#" >드루와컴퍼니</a>
+          <div className="text-white sm:text-3xl">
+            <a href="#">드루와컴퍼니</a>
           </div>
           <div className="sm:hidden">
             <button
@@ -63,7 +63,6 @@ export default function Header({ hide }) {
           </a>
         </div>
         <Media 
-          className={classNames({ "hidden": isMobile })} 
           color="white" 
           size="2x"
         />

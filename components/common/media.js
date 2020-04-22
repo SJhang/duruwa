@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-export default function media({ size = "2x", className, color }) {
+export default function media({ size = "2x", color }) {
   const sizes = {
     xs: 'fa-xs',
     sm: 'fa-sm',
@@ -13,7 +13,7 @@ export default function media({ size = "2x", className, color }) {
   };
 
   return (
-    <div className={classNames(`flex items-center text-${color}`, {[className]: !!className})}>
+    <div className={`flex items-center text-${color} hidden sm:block`}>
       <a className="px-3 py-2 cursor-pointer">
         <i className={`fab fa-instagram ${sizes[size]}`}/>
       </a>

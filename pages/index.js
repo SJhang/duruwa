@@ -14,6 +14,7 @@ export default function Index() {
       <Layout>
         <Container>
           <Intro/>
+          
         </Container>
       </Layout>
     </>
