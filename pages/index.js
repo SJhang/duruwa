@@ -2,7 +2,7 @@ import Head from "next/head";
 import Container from "../components/common/container";
 import Layout from "../components/common/layout";
 
-import Intro from '../components/Intro';
+import CoverImage from '../components/Intro/CoverImage';
 
 export default function Index() {
   return (
@@ -13,7 +13,6 @@ export default function Index() {
 
       <Layout>
         <Container>
-          <Intro/>
           
         </Container>
       </Layout>

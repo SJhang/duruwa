@@ -13,7 +13,7 @@ export default function media({ size = "2x", color }) {
   };
 
   return (
-    <div className={`flex items-center text-${color} hidden sm:block`}>
+    <div className={`flex items-center text-${color} hidden`}>
       <a className="px-3 py-2 cursor-pointer">
         <i className={`fab fa-instagram ${sizes[size]}`}/>
       </a>
