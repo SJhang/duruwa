@@ -29,7 +29,6 @@ const Line = styled.div`
 
 export default function Menubar() {
 
-  onClick
   return (
     <Nav>
       <Content title="menu">
