@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Duruwa</title>
+        <title>이츠타임</title>
       </Head>
 
       <Layout>

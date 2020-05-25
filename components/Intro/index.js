@@ -29,9 +29,6 @@ export default function IntroPage() {
           할인하다
         </h4>
       </section>
-      <ImageContainer>
-        <CoverImage src={"/assets/images/kiwa.webp"}/>
-      </ImageContainer>
     </>
   );
 }

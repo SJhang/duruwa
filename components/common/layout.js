@@ -11,7 +11,7 @@ export default function Layout({ preview, children }) {
       <Meta />
       <Menubar/>
       <Header />
-      <CoverImage src={"/assets/images/kiwa.webp"}/>
+      <CoverImage src={"/assets/images/cafe.png"}/>
       <div className="min-h-screen">
         {/* <Alert preview={preview} /> */}
         {children}

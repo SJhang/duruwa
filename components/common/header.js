@@ -4,6 +4,14 @@ import classNames from "classnames";
 import Container from './container';
 import Content from './content';
 
+const HeaderWrapper = styled.header`
+padding-top: calc(25vh - 35px);
+`;
+
+const H1 = styled.h1`
+letter-spacing: .6875rem;
+`
+
 export default function Header({ hide }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,25 +20,18 @@ export default function Header({ hide }) {
     setIsOpen(!isOpen);
   };
 
-  const Header = styled.header`
-    padding-top: calc(25vh - 35px);
-  `;
-
-  const H1 = styled.h1`
-    letter-spacing: .6875rem;
-  `
 
   return (
-    <Header className={"bg-white sm:px-5 leading-none"}>
+    <HeaderWrapper className={"bg-white sm:px-5 leading-none"}>
       <Container className="sm:flex sm:justify-between sm:mb-5 sm:px-5 sm:items-center">
         <div className="flex item-center py-3 justify-between sm:p-0">
           <H1 className="sm:text-7xl text-black">
-            <a href="#">드루와컴퍼니</a>
+            <a href="#">이츠타임</a>
           </H1>
         </div>
-        <Content title="summary" className="mr-48">동해물과 백두산이 마르고 닳도록 하나님이 보우하사 우리나라 만세</Content>
+        <Content title="summary" className="mr-48">마음 놓고 할인하는 세상을 만들고 있습니다</Content>
       </Container>
-    </Header>
+    </HeaderWrapper>
   );
 }
 
