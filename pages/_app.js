@@ -1,7 +1,7 @@
-import '../styles/index.css';
+import '../src/styles/index.css';
 import { ThemeProvider } from 'styled-components'
 
-import "../styles/fontawesome";
+import "../src/styles/fontawesome";
 
 const theme = {
   primary: 'green',

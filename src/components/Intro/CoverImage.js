@@ -15,7 +15,7 @@ const Image = styled.img`
 
 export default function CoverImage({ title, src }) {
   return (
-    <ImageContainer className="mt-20">
+    <ImageContainer>
       <Image
         src={src}
         alt={`Cover Image for ${title}`}

@@ -25,20 +25,20 @@ src: url('/public/assets/fonts/Roboto/Roboto-Thin.ttf');
 
 @font-face {
   font-family: 'Nanum Light';
-  src: url('/assets/fonts/Nanum/NanumSquareRoundL.ttf');
+  src: url('/public/assets/fonts/Nanum/NanumSquareRoundL.ttf');
 }
 
 @font-face {
   font-family: 'Nanum Regular';
-  src: url('/assets/fonts/Nanum/NanumSquareRoundR.ttf');
+  src: url('/public/assets/fonts/Nanum/NanumSquareRoundR.ttf');
 }
 
 @font-face {
   font-family: 'Nanum Bold';
-  src: url('/assets/fonts/Nanum/NanumSquareRoundB.ttf');
+  src: url('/public/assets/fonts/Nanum/NanumSquareRoundB.ttf');
 }
 
 @font-face {
   font-family: 'Nanum Extra Bold';
-  src: url('/assets/fonts/Nanum/NanumSquareRoundEB.ttf');
+  src: url('/public/assets/fonts/Nanum/NanumSquareRoundEB.ttf');
 }
