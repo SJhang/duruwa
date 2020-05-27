@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
       <Head>
         {this.props.styleTags}
         <link href="https://use.fontawesome.com/releases/v5.2.0/css/svg-with-js.css" rel="stylesheet"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
         <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"/>
         <script dangerouslySetInnerHTML={{__html: `(function() {
   var IMP = window.IMP;
