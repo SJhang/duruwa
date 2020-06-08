@@ -1,7 +1,7 @@
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;
-
 @import '_variables.css';
+@import '_header.css';
+@import '_background.css';
+
+body {
+    font-family: Raleway;
+}

@@ -1,5 +1,3 @@
-import Container from '../common/container';
-import cn from "classnames";
 import styled from "styled-components";
 
 const ImageContainer = styled.div`

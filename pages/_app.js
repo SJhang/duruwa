@@ -1,16 +1,31 @@
-import '../src/styles/index.css';
+import NextApp from 'next/app'
+import React from 'react'
 import { ThemeProvider } from 'styled-components'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { I18nextProvider } from 'react-i18next';
 
-import "../src/styles/fontawesome";
+import theme from '../src/theme';
+import i18n from '../src/config/i18n';
 
-const theme = {
-  primary: 'green',
-};
+export default class App extends NextApp {
+  componentDidMount() {
+    const jssStyles = document.querySelector('#jss-server-side');
 
-export default function App({ Component, pageProps }) {
-  return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
+    if (jssStyles && jssStyles.parentNode) {
+      jssStyles.parentNode.removeChild(jssStyles);
+    }
+  }
+
+  render() {
+    const { Component, pageProps } = this.props;
+
+    return (
+      <ThemeProvider theme={theme}>
+        <CssBaseline/>
+        <I18nextProvider i18n={i18n}>
+          <Component {...pageProps} />
+        </I18nextProvider>
+      </ThemeProvider>
+    )
+  }
 }

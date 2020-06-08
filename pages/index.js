@@ -1,27 +1,39 @@
+import React from "react";
 import Head from "next/head";
-import Container from "../src/components/common/container";
-import Layout from "../src/components/common/layout";
+import {useTranslation} from "react-i18next";
 
-import CoverImage from '../src/components/Intro/CoverImage';
+import Header from "../src/components/Header";
+import IntroPage from "../src/components/Intro";
+import About from "../src/components/About";
+import Features from "../src/components/Features";
+import AboutUs from "../src/components/ContactUs";
+import Footer from "../src/components/Footer";
+
+import '../src/styles/index.css';
+import CustomContainer from "../src/components/common/Container";
 
 export default function Index() {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <Head>
-        <title>이츠타임</title>
+        <title>{t('common:company')}</title>
+
+        <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+        <meta name="description" content="eatstime"/>
+        <link href="https://use.fontawesome.com/releases/v5.2.0/css/svg-with-js.css" rel="stylesheet"/>
       </Head>
 
-      <Layout>
-        <Container>
-          
-        </Container>
-      </Layout>
+      <CustomContainer>
+        <Header />
+        <IntroPage/>
+      </CustomContainer>
+
+      <About />
+      <Features />
+      <AboutUs />
+      <Footer />
     </>
   );
 }
-
-// export async function getStaticProps() {
-//   return {
-//     props: props
-//   }
-// }

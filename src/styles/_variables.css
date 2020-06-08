@@ -1,44 +1,5 @@
-/* @font-face {
-  font-family: 'Roboto';
-  src: url('/public/assets/fonts/Roboto/Roboto-Black.ttf');
-  font-display: auto;
-  font-style: normal;
-}
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/public/assets/fonts/Roboto/Montserrat-Black.ttf');
-  src: url('/public/assets/fonts/Roboto/Montserrat-Bold.ttf');
-  src: url('/public/assets/fonts/Roboto/Montserrat-Light.ttf');
-  src: url('/public/assets/fonts/Roboto/Montserrat-Medium.ttf');
-  src: url('/public/assets/fonts/Roboto/Montserrat-Regular.ttf');
-  src: url('/public/assets/fonts/Roboto/Montserrat-Thin.ttf');
-} */
-
-/**
-src: url('/public/assets/fonts/Roboto/Roboto-Bold.ttf');
-src: url('/public/assets/fonts/Roboto/Roboto-Light.ttf');
-src: url('/public/assets/fonts/Roboto/Roboto-Medium.ttf');
-src: url('/public/assets/fonts/Roboto/Roboto-Regular.ttf');
-src: url('/public/assets/fonts/Roboto/Roboto-Thin.ttf');
-*/
-
-@font-face {
-  font-family: 'Nanum Light';
-  src: url('/public/assets/fonts/Nanum/NanumSquareRoundL.ttf');
-}
-
-@font-face {
-  font-family: 'Nanum Regular';
-  src: url('/public/assets/fonts/Nanum/NanumSquareRoundR.ttf');
-}
-
-@font-face {
-  font-family: 'Nanum Bold';
-  src: url('/public/assets/fonts/Nanum/NanumSquareRoundB.ttf');
-}
-
-@font-face {
-  font-family: 'Nanum Extra Bold';
-  src: url('/public/assets/fonts/Nanum/NanumSquareRoundEB.ttf');
+    font-family: 'Raleway', sans-serif;
 }

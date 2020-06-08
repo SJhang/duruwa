@@ -12,6 +12,9 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "@material-ui/core": "^4.10.1",
+    "@material-ui/lab": "^4.0.0-alpha.55",
+    "@zeit/next-css": "^1.0.1",
     "jquery": "^3.5.1",
     "next": "9.3.5",
     "prettier": "^2.0.5",
@@ -22,9 +25,13 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
-    "dotenv": "8.2.0",
-    "postcss-preset-env": "^6.7.0",
     "classnames": "^2.2.6",
-    "tailwindcss": "^1.2.0"
+    "dotenv": "8.2.0",
+    "i18next": "^19.4.5",
+    "i18next-browser-languagedetector": "^4.2.0",
+    "moment": "^2.26.0",
+    "numeral": "^2.0.6",
+    "postcss-preset-env": "^6.7.0",
+    "react-i18next": "^11.5.0"
   }
 }
