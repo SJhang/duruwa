@@ -2,22 +2,21 @@ import React from 'react';
 import { useRouter } from 'next/router'
 import { Link } from '@material-ui/core';
 
-function ActiveLink({ children, href, className, color }) {
+function ActiveLink(props) {
   const router = useRouter();
 
   const handleClick = (e) => {
     e.preventDefault()
-    return router.push(href);
+    return router.push(props.href);
   }
 
   return (
     <Link
-      href={href}
+      {...props}
       onClick={handleClick}
-      color={color || router.pathname === href ? 'inherit' : 'primary'}
-      className={className}
+      color={props.color || router.pathname === props.href ? 'inherit' : 'primary'}
     >
-      {children}
+      {props.children}
     </Link>
   )
 }

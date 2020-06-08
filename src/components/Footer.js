@@ -25,13 +25,25 @@ export default function footer() {
           <Grid item xs={12}>
             <Grid container alignItems="center" justify="space-between" spacing={10}>
               <Grid item>
-                <ActiveLink color="textSecondary" href={paths.policy}>{t('common:policyTerms')}</ActiveLink>
+                <ActiveLink
+                  underline="hover"
+                  color="textSecondary"
+                  href={paths.policy}
+                >{t('common:policyTerms')}</ActiveLink>
               </Grid>
               <Grid item>
-                <ActiveLink color="textSecondary" href={paths.policy}>{t('common:policyPrivacy')}</ActiveLink>
+                <ActiveLink
+                  color="textSecondary"
+                  href={paths.policy}
+                  underline="hover"
+                >{t('common:policyPrivacy')}</ActiveLink>
               </Grid>
               <Grid item>
-                <ActiveLink color="textSecondary" href={paths.policy}>{t('common:policyLocation')}</ActiveLink>
+                <ActiveLink
+                  color="textSecondary"
+                  href={paths.policy}
+                  underline="hover"
+                >{t('common:policyLocation')}</ActiveLink>
               </Grid>
             </Grid>
           </Grid>

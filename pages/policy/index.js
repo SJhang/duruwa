@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import Head from "next/head";
-import {Container, Paper, AppBar, Tabs, Tab, Box, Typography} from "@material-ui/core";
+import {Container, Paper, AppBar, Tabs, Tab, Box} from "@material-ui/core";
 import {useTranslation} from "react-i18next";
+import {makeStyles} from "@material-ui/core/styles";
 
 import Header from "../../src/components/Header";
-import BreadCrumbs from "../../src/components/common/BreadCrumbs";
 import TermsPolicy from "../../src/components/Policies/terms";
 import TermsPolicyUser from "../../src/components/Policies/UserTerms";
 import LocationPolicy from "../../src/components/Policies/location";
 import PrivacyPolicy from "../../src/components/Policies/privacy";
-import {makeStyles} from "@material-ui/core/styles";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -32,6 +32,9 @@ function TabPanel(props) {
 }
 
 const useStyles = makeStyles(theme => ({
+  container: {
+    background: theme.palette.background.default
+  },
   root: {
     margin: theme.spacing(5, 0),
     backgroundColor: theme.palette.background.paper,
@@ -70,7 +73,7 @@ export default function Index() {
   }
 
   return (
-    <Container>
+    <Container className={classes.container}>
       <Head>
         <title>이츠타임</title>
 

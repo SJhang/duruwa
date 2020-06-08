@@ -501,6 +501,13 @@ const theme = createMuiTheme({
         },
       },
     },
+    MuiToggleButton: {
+      root: {
+        '&$selected': {
+          color: '#fff'
+        }
+      }
+    },
     MuiToolbar: {
       gutters: {
         paddingLeft: 16,

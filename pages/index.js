@@ -7,6 +7,7 @@ import IntroPage from "../src/components/Intro";
 import About from "../src/components/About";
 import Features from "../src/components/Features";
 import AboutUs from "../src/components/ContactUs";
+import Download from "../src/components/Download";
 import Footer from "../src/components/Footer";
 
 import '../src/styles/index.css';
@@ -33,6 +34,7 @@ export default function Index() {
       <About />
       <Features />
       <AboutUs />
+      <Download />
       <Footer />
     </>
   );
