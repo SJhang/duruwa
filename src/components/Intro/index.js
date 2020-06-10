@@ -5,7 +5,7 @@ import {useTranslation} from "react-i18next";
 
 const useStyles = makeStyles(theme => ({
   container: {
-    minHeight: '90vh'
+    // minHeight: '90vh'
   },
   download: {
     padding: theme.spacing(2, 4),
@@ -23,7 +23,7 @@ function IntroPage() {
 
   return (
     <Grid container justify="space-between" alignItems="center" className={classes.container}>
-      <Grid item xs={8}>
+      <Grid item xs={12} md={8}>
         <Typography variant="h2" fontWeight="bold" gutterBottom>{t('intro:headline')}</Typography>
         <Typography variant="h4" gutterBottom>{t('intro:subHeadline')}</Typography>
         <Button
@@ -35,8 +35,9 @@ function IntroPage() {
           {t('intro:downloadButton')}
         </Button>
       </Grid>
-      <Grid item>
-        <img className={classes.image} src="/assets/images/Screen.png"/>
+      <Grid item xs={12} md={4}>
+        <Grid container alignItems="center" justify="center">
+          <img className={classes.image} src="/assets/images/Screen.png"/></Grid>
       </Grid>
     </Grid>
   );

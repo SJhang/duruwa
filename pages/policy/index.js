@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Head from "next/head";
 import {Container, Paper, AppBar, Tabs, Tab, Box} from "@material-ui/core";
 import {useTranslation} from "react-i18next";
@@ -9,6 +9,8 @@ import TermsPolicy from "../../src/components/Policies/terms";
 import TermsPolicyUser from "../../src/components/Policies/UserTerms";
 import LocationPolicy from "../../src/components/Policies/location";
 import PrivacyPolicy from "../../src/components/Policies/privacy";
+import ScrollTop from "../../src/components/common/ScrollTop";
+import {useRouter} from "next/router";
 
 
 function TabPanel(props) {
@@ -45,6 +47,12 @@ export default function Index() {
   const { t } = useTranslation();
   const classes = useStyles();
   const [ index, setIndex ] = useState(0);
+
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const handleChange = (e, newVal) => {
     setIndex(newVal);
@@ -101,6 +109,8 @@ export default function Index() {
         </AppBar>
         {renderPanel()}
       </Paper>
+
+      <ScrollTop/>
     </Container>
   );
 }

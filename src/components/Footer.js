@@ -12,6 +12,9 @@ const useStyles = makeStyles(theme => ({
     color: '#fff',
     padding: theme.spacing(15, 0)
   },
+  info: {
+    marginTop: theme.spacing(10)
+  }
 }));
 
 export default function footer() {
@@ -21,30 +24,28 @@ export default function footer() {
   return (
     <Grid className={classes.footer}>
       <Container>
-        <Grid container alignItems="flex-start" justify="center" direction="column" spacing={10}>
-          <Grid item xs={12}>
-            <Grid container alignItems="center" justify="space-between" spacing={10}>
-              <Grid item>
-                <ActiveLink
-                  underline="hover"
-                  color="textSecondary"
-                  href={paths.policy}
-                >{t('common:policyTerms')}</ActiveLink>
-              </Grid>
-              <Grid item>
-                <ActiveLink
-                  color="textSecondary"
-                  href={paths.policy}
-                  underline="hover"
-                >{t('common:policyPrivacy')}</ActiveLink>
-              </Grid>
-              <Grid item>
-                <ActiveLink
-                  color="textSecondary"
-                  href={paths.policy}
-                  underline="hover"
-                >{t('common:policyLocation')}</ActiveLink>
-              </Grid>
+        <Grid container alignItems="flex-start" justify="center" direction="column">
+          <Grid container alignItems="center" justify="space-between" spacing={5}>
+            <Grid item xs={12} md={4}>
+              <ActiveLink
+                underline="hover"
+                color="textSecondary"
+                href={paths.policy}
+              >{t('common:policyTerms')}</ActiveLink>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <ActiveLink
+                color="textSecondary"
+                href={paths.policy}
+                underline="hover"
+              >{t('common:policyPrivacy')}</ActiveLink>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <ActiveLink
+                color="textSecondary"
+                href={paths.policy}
+                underline="hover"
+              >{t('common:policyLocation')}</ActiveLink>
             </Grid>
           </Grid>
           <Grid item className={classes.info}>

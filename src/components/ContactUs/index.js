@@ -11,7 +11,6 @@ function AboutUs() {
 
   return (
     <Grid container>
-      contact
     </Grid>
   )
 }

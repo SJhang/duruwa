@@ -9,11 +9,11 @@ import Features from "../src/components/Features";
 import AboutUs from "../src/components/ContactUs";
 import Download from "../src/components/Download";
 import Footer from "../src/components/Footer";
+import ScrollTop from "../src/components/common/ScrollTop";
 
-import '../src/styles/index.css';
 import CustomContainer from "../src/components/common/Container";
 
-export default function Index() {
+export default function Index({ isMobile, isAndroid }) {
   const { t, i18n } = useTranslation();
 
   return (
@@ -36,6 +36,8 @@ export default function Index() {
       <AboutUs />
       <Download />
       <Footer />
+
+      <ScrollTop />
     </>
   );
 }

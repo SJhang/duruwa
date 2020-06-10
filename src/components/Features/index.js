@@ -11,7 +11,6 @@ function Features() {
 
   return (
     <Grid container>
-      features
     </Grid>
   )
 }

@@ -8,10 +8,7 @@ const useStyles = makeStyles(theme => ({
     color: "#fff"
   },
   coolBackground: {
-
-    background: 'linear-gradient(45deg, #db1372 30%, #e73c7e 90%)',
-    backgroundSize: '400% 400%',
-    animation: 'gradient 15s ease infinite',
+    background: 'linear-gradient(135deg, #fbc415, #c60178)',
     color: '#fff'
   }
 }));

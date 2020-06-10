@@ -6,8 +6,9 @@ import numeral from 'numeral';
 import 'moment/locale/ko';
 
 import * as en from '../locales/en';
+import * as ko from '../locales/ko';
 
-const additionalLanguages = ['ko'];
+const additionalLanguages = ['en'];
 
 i18n.on('languageChanged', (language) => {
   const twoLetterCode = language && language.split('-')[0];
@@ -27,8 +28,8 @@ i18n.on('languageChanged', (language) => {
 });
 
 i18n.use(LanguageDetector).init({
-  resources: { en },
-  fallbackLng: 'en',
+  resources: { ko },
+  fallbackLng: 'ko',
   load: 'languageOnly',
   lowerCaseLng: true,
   interpolation: {

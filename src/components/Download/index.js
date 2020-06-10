@@ -11,7 +11,6 @@ function Download() {
 
   return (
     <Grid container>
-      download
     </Grid>
   )
 }
